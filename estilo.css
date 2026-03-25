@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+h1 {
+    color: #2c6bed;
+}
+
+.timeline-container {
+    width: 60%;
+    margin: 30px auto;
+    position: relative;
+}
+
+.timeline-event {
+    display: none;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: opacity 0.5s ease;
+    text-align: justify;
+}
+
+.timeline-event.active {
+    display: block;
+}
+
+.timeline-event h2 {
+    color: #2c6bed;
+}
+
+.timeline-event span {
+    font-style: italic;
+    color: gray;
+}
+.timeline-event p {
+    text-align: justify; /* Asegura que todos los elementos estén justificados */
+}
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background: #2c6bed;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1a4db8;
+}
